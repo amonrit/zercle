@@ -1,0 +1,382 @@
+/*--------------------------------------------------------------------- main ---------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/*--------------------------------------------------------------------- header ---------------------------------------------------------------------*/
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: block;
+  background-color: black;
+}
+
+.inner_header {
+  width: 1100px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+}
+
+.logo_container {
+  height: 100%;
+  display: table;
+  float: left;
+}
+
+.logo_container h1 {
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.logo_container h1 span {
+  font-weight: 800;
+  color: rgb(240, 158, 44);
+}
+
+.navigation {
+  float: right;
+  height: 100%;
+}
+
+.navigation a {
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 20px;
+  cursor: default;
+}
+
+.navigation a:last-child {
+  padding-right: 0;
+}
+
+.navigation a li {
+  display: table-cell;
+  vertical-align: middle;
+  height: 50px !important;
+  line-height: 50px !important;
+  color: white;
+  font-size: 16px;
+}
+
+.navigation a li.active {
+  color: #ed563b;
+}
+
+.navigation a li:hover {
+  transition: 0.7s;
+  color: #ed563b;
+  cursor: pointer;
+}
+
+.main-button {
+  background-color: transparent;
+  border-radius: 50px;
+}
+
+.main-button li {
+  padding: 12px 20px;
+  height: auto;
+}
+
+.main-button li button {
+  color: white;
+  background-color: #ed563b;
+  text-align: center;
+  font-weight: 400;
+  padding: 10px;
+  border: none;
+  height: auto;
+  line-height: 20px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.main-button li button:hover {
+  color: #ed563b;
+  background-color: #f9735b;
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*--------------------------------------------------------------------- Main Banner ---------------------------------------------------------------------*/
+
+.main-banner {
+  position: relative;
+}
+
+#bg-video {
+  min-width: 100%;
+  min-height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#bg-video::-webkit-media-controls {
+  display: none !important;
+}
+
+.video-overlay {
+  position: absolute;
+  background-color: rgba(35, 45, 57, 0.8);
+  top: 0;
+  left: 0;
+  bottom: 7px;
+  width: 100%;
+  height: 89%;
+}
+
+.main-banner .caption {
+  text-align: center;
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-banner .caption h6 {
+  margin-top: 0px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.main-banner .caption h2 {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-size: 84px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.main-banner .caption h2 em {
+  font-style: normal;
+  color: #ed563b;
+  font-weight: 900;
+}
+
+/*--------------------------------------------------------------------- Education ---------------------------------------------------------------------*/
+
+.section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  display: block;
+}
+
+.sectionContainer {
+  width: 100%;
+  /* padding-right: 15px;
+  padding-left: 15px; */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sectionRow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* margin-right: -15px;
+  margin-left: -15px; */
+}
+
+.sectionPosition {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-left: 25%;
+}
+
+.section-heading {
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 80px;
+}
+
+.section-heading h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #232d39;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.section-heading h2 em {
+  font-style: normal;
+  color: #ed563b;
+}
+
+.section-heading img {
+  margin: 20px auto;
+}
+
+.schoolPosition {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-left: 25%;
+}
+
+#features {
+  margin-bottom: 80px;
+}
+
+.feature-item {
+  display: flex;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+.feature-item .left-icon img {
+  float: left;
+  margin-right: 30px;
+}
+
+.feature-item .right-content {
+  display: inline;
+}
+
+.feature-item .right-content h4 {
+  margin-top: 0px;
+  margin-bottom: 7px;
+  letter-spacing: 0.25px;
+  color: #232d39;
+  font-size: 19px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.feature-item .right-content p {
+  color: #7a7a7a;
+}
+
+.feature-item .right-content a.text-button {
+  margin-top: 7px;
+  display: inline-block;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #ed563b;
+  font-weight: 500;
+}
+
+/*--------------------------------------------------------------------- Skill ---------------------------------------------------------------------*/
+
+.sectionSkill {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  display: block;
+}
+
+.sectionSkillRow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.sectionSkillPosition {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-left: 25%;
+}
+
+.rowOnePositon {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  /* margin-left: 25%; */
+  margin-left: 5%;
+}
+
+.rowTwoPositon {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-left: 5%;
+}
+
+input[name=css-tabs] {
+  display: none;
+}
+
+#content section {
+	position: absolute;
+	transform: translateY(50px);
+	opacity: 0;
+	transition: transform 500ms, opacity 500ms;
+}
+#radio1:checked ~ #content #content1, #radio2:checked ~ #content #content2, #radio3:checked ~ #content #content3, #radio4:checked ~ #content #content4 {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+
