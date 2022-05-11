@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/input.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="min-h-screen bg-gray-500 flex items-center justify-center">
+      <div class="bg-slate-300 border-2 border-gray-900 shadow-2xl rounded-lg">
+        <form class="border-b-2 border-gray-900 p-8">
+          <div
+            class="bg-gray-400 border-2 border-gray-900 shadow-2xl rounded-2xl"
+          >
+            <input
+              id="fieldname"
+              type ="text"
+              class="bg-transparent p-8  outline-none text-3xl text-right text-black font-mono"
+            />
+          </div>
+        </form>
+
+        <div class="p-6 text-gray-200 grid grid-cols-4 gap-4 text-xl">
+          <button
+            class="font-mono col-span-3 bg-sky-600 hover:bg-sky-400 rounded-tl-3xl p-5"
+            onclick="fun_c()"
+          >
+            C
+          </button>
+          <button
+            class="font-mono bg-blue-600 hover:bg-blue-400 rounded-tr-3xl p-5"
+            onclick="fun_divide()"
+          >
+            &divide;
+          </button>
+
+          <button
+            class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5"
+            onclick="fun7()"
+          >
+            7
+          </button>
+          <button
+            class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5"
+            onclick="fun8()"
+          >
+            8
+          </button>
+          <button
+            class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5"
+            onclick="fun9()"
+          >
+            9
+          </button>
+          <button
+            class="font-mono bg-indigo-600 hover:bg-indigo-400 rounded-full p-5"
+            onclick="fun_multiply()"
+          >
+            &times;
+          </button>
+
+          <button
+            class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5"
+            onclick="fun4()"
+          >
+            4
+          </button>
+          <button
+            class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5"
+            onclick="fun5()"
+          >
+            5
+          </button>
+          <button
+            class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5"
+            onclick="fun6()"
+          >
+            6
+          </button>
+          <button
+            class="font-mono bg-violet-600 hover:bg-violet-400 rounded-full p-5"
+            onclick="fun_minus()"
+          >
+            &minus;
+          </button>
+
+          <button id="button1" 
+            class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5"
+            onclick="fun1()"
+          >
+            1
+          </button>
+          <button id="button2"
+            class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5"
+            onclick="fun2()"
+          >
+            2
+          </button>
+          <button
+            class="font-mono bg-gray-500 hover:bg-gray-400 rounded-full p-5"
+            onclick="fun3()"
+          >
+            3
+          </button>
+          <button
+            class="font-mono bg-purple-600 hover:bg-purple-400 rounded-full p-5"
+            onclick="fun_plus()"
+          >
+            &plus;
+          </button>
+
+          <button
+            class="font-mono bg-rose-600 hover:bg-rose-400 rounded-full p-5"
+            onclick="fun0()"
+          >
+            0
+          </button>
+          <button
+            class="font-mono bg-pink-600 hover:bg-pink-400 rounded-full p-5"
+            onclick="fun_dot()"
+          >
+            .
+          </button>
+
+          <button
+            class="font-mono col-span-2 bg-fuchsia-600 hover:bg-fuchsia-400 rounded-full p-5"
+            onclick="fun_answer()"
+          >
+            &equals;
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
