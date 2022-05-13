@@ -1,0 +1,18 @@
+/* ----------- iPad ----------- */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1200px) and (orientation: landscape) {
+  .inner_header {
+    width: 820px;
+  }
+  .video-overlay {
+    height: 92%;
+  }
+  .skill_tab {
+    margin-left: 0%; 
+  }
+  footer {
+      min-height: 500px;
+  }
+}
+
+

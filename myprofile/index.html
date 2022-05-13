@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-    <title>Amonrit Tnagludee</title>
+    <title>Amonrit Tangludee</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- ***** Header Start ***** -->
@@ -19,10 +26,10 @@
           </div>
           <ul class="navigation">
             <a href="#home"><li class="active">HOME</li></a>
-            <a href="#"><li>ABOUT</li></a>
+            <!-- <a href="#"><li>ABOUT</li></a> -->
             <a href="#education"><li>EDUCATIONAL</li></a>
-            <a href="#"><li>SKILLS</li></a>
-            <a href="#"><li>CONTACT</li></a>
+            <a href="#skills"><li>SKILLS</li></a>
+            <a href="#contact"><li>CONTACT</li></a>
             <a class="main-button" href="#"
               ><li style="cursor: default"><button>DONATE</button></li></a
             >
@@ -117,44 +124,128 @@
     <!-- ***** Education End ***** -->
 
     <!-- ***** Skill Start ***** -->
-    <input id="radio1" type="radio" name="css-tabs" checked />
-    <input id="radio2" type="radio" name="css-tabs" />
-    <input id="radio3" type="radio" name="css-tabs" />
-    <input id="radio4" type="radio" name="css-tabs" />
-    <div id="tabs">
-      <label id="tab1" for="radio1">Python</label>
-      <label id="tab2" for="radio2">Java</label>
-      <label id="tab3" for="radio3">Sleep</label>
-      <label id="tab4" for="radio4">Game</label>
-    </div>
-    <div id="content">
-      <section id="content1">
-        <h3>Python</h3>
-        <p>
-          ??????????????????????????????????????????????????????
-        </p>
-      </section>
-      <section id="content2">
-        <h3>Java</h3>
-        <p>
-          ??????????????????????????????????????????????????????
-        </p>
-        
-      </section>
-      <section id="content3">
-        <h3>Sleep</h3>
-        <p>
-          ??????????????????????????????????????????????????????
-        </p>
-      </section>
-      <section id="content4">
-        <h3>Game</h3>
-        <p>
-          ??????????????????????????????????????????????????????
-        </p>
-        
-      </section>
+    <div class="skill_containner" id="skills">
+      <input id="radio1" type="radio" name="css-tabs" checked />
+      <input id="radio2" type="radio" name="css-tabs" />
+      <input id="radio3" type="radio" name="css-tabs" />
+      <input id="radio4" type="radio" name="css-tabs" />
+      <div id="tabs" class="skill_tab">
+        <label id="tab1" for="radio1">Python</label>
+        <label id="tab2" for="radio2">Java</label>
+        <label id="tab3" for="radio3">Sleep</label>
+        <label id="tab4" for="radio4">Game</label>
+      </div>
+      <div id="content" class="div_skill">
+        <div class="inner_div_skill">
+          <section id="content1">
+            <img src="./images/python.jpg" alt="First Class" />
+            <h3>Python</h3>
+            <p>??????????????????????????????????????????????????????</p>
+          </section>
+          <section id="content2">
+            <img src="./images/java.jpg" alt="First Class" />
+            <h3>Java</h3>
+            <p>??????????????????????????????????????????????????????</p>
+          </section>
+          <section id="content3">
+            <img src="./images/catsleep.jfif" alt="First Class" />
+            <h3>Sleep</h3>
+            <p>??????????????????????????????????????????????????????</p>
+          </section>
+          <section id="content4">
+            <img src="./images/catplaygame.jpg" alt="First Class" />
+            <h3>Game</h3>
+            <p>??????????????????????????????????????????????????????</p>
+          </section>
+        </div>
+      </div>
     </div>
     <!-- ***** Skill End ***** -->
+
+    <!-- ***** footer start ***** -->
+    <footer class="footer">
+      <div class="container bottom_border" id="contact">
+        <div class="row">
+          <div class="col-sm-4 col-md col-sm-4 col-12 col">
+            <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+            <p class="mb10">
+              123 ถนน มิตรภาพ ตำบล ศิลา อำเภอเมืองขอนแก่น ขอนแก่น 40002
+            </p>
+
+            <p><i class="fa fa-phone"></i> 0807130041</p>
+            <p><i class="fa fa fa-envelope"></i> amonrit.t@kkumail.com</p>
+          </div>
+
+          <div class="col-sm-4 col-md col-6 col">
+            <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+            <ul class="footer_ul_amrc">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-4 col-md col-6 col">
+            <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+            <ul class="footer_ul_amrc">
+              <li><a href="#">Github</a></li>
+              <li><a href="#">Line</a></li>
+              <li><a href="#">Dota2</a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-4 col-md col-12 col">
+            <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+
+            <ul class="footer_ul2_amrc">
+              <li>
+                <a href="#"
+                  ><i class="fab fa-twitter fleft padding-right"></i>
+                </a>
+                <p>
+                  wait a minute!<a href="#"
+                    >https://youtu.be/1Xfdjqa5dfY</a
+                  >
+                </p>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-twitter fleft padding-right"></i>
+                </a>
+                <p>
+                  SIRIMONGKOL - APRIL<a href="#"
+                    >https://youtu.be/VgOzPNQ4-Qw</a
+                  >
+                </p>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fab fa-twitter fleft padding-right"></i>
+                </a>
+                <p>
+                  LOMOSONIC - ขอ (WARM EYES)<a href="#"
+                    >https://youtu.be/tUuqWFExZgY</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="foote_bottom_ul_amrc">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <p class="text-center">
+          Copyright @2017 | Designed With by <a href="#">Amonrit Tangludee</a>
+        </p>
+
+      </div>
+    </footer>
+    <!-- ***** footer end ***** -->
+
   </body>
 </html>
